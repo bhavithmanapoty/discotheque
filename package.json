@@ -19,8 +19,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "react-scripts build && mkdir build/assets && cp build/index.html build/assets && twilio serverless:deploy --service-name react-audio-livestream --cwd serverless --assets-folder ../build",
+    "deploy": "react-scripts build",
     "test": "react-scripts test",
+    "launch": "twilio serverless:deploy --service-name audio-livestream-3 --cwd serverless --assets-folder ../build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
